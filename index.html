@@ -54,11 +54,11 @@
 													</ul>
 												</li>
 												<li>
-													<a href="#">Company</a>
+													<a href="#">Contact</a>
 													<ul>
 
-														<li><a href="companyemail.html">qoute@Jeska.com</a></li>
-														<li><a href="companyphone.html">(814)822-7548</a></li>
+														<li><a href="companyemail.html">sjj@jeska-co.com</a></li>
+														<li><a href="companyphone.html">(814)790-9855</a></li>
 
 													</ul>
 												</li>
@@ -77,40 +77,35 @@
 							</header>
 
 						<!-- Banner -->
-							<div id="banner">
-								<img width="100%" height="auto" class="mySlides" src="images/delllatitude.png">
-								<img width="100%" height="auto" class="mySlides" src="images/macbookpro.png">
+						<br/>
+							<div id="">
+								<img width="100%" height="auto" class="mySlides" src="images/serverroom.png">
+								<img width="100%" height="auto" class="mySlides" src="images/rack.png">
+								<img width="100%" height="auto" class="mySlides" src="images/dellserver.png">
+								<img width="100%" height="auto" class="mySlides" src="images/hpserver.png">
+								<img width="100%" height="auto" class="mySlides" src="images/tablet1.png">
+								<img width="100%" height="auto" class="mySlides" src="images/delllaptop1.png">
 								<img width="100%" height="auto" class="mySlides" src="images/hpelitebook.png">
 
-								<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-								<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+
 								<script type="text/javascript">
-								var slideIndex = 1;
-								showDivs(slideIndex);
+								var myIndex = 0;
+								carousel();
 
-								function plusDivs(n) {
-    						showDivs(slideIndex += n);
+								function carousel() {
+								    var i;
+								    var x = document.getElementsByClassName("mySlides");
+								    for (i = 0; i < x.length; i++) {
+								       x[i].style.display = "none";
+								    }
+								    myIndex++;
+								    if (myIndex > x.length) {myIndex = 1}
+								    x[myIndex-1].style.display = "block";
+								    setTimeout(carousel, 5000); // Change image every 2 seconds
 								}
-
-									function showDivs(n) {
-									    var i;
-									    var x = document.getElementsByClassName("mySlides");
-									    if (n > x.length) {slideIndex = 1}
-									    if (n < 1) {slideIndex = x.length} ;
-									    for (i = 0; i < x.length; i++) {
-									        x[i].style.display = "none";
-									    }
-									    x[slideIndex-1].style.display = "block";
-									}
 								</script>
 								<br/>
-								<h2>
-									<br/><br/>
-									<br/><strong>Jeska LLC:</strong> Best place for all your federal contracting needs.
-								<br /><br/>
-								<br/></a></h2>
-								<p>Want to make a contract with us?</p>
-								<a href="#" class="button big icon fa-check-circle">Contact Us</a>
+
 							</div>
 
 					</div>
@@ -130,11 +125,11 @@
 									<section>
 										<h2>Main Links</h2>
 										<ul class="divided">
-											<li><a href="#">Home</a></li>
-											<li><a href="#">About</a></li>
-											<li><a href="#">Products</a></li>
-											<li><a href="#">Company</a></li>
-											<li><a href="#">Gov + Defense</a></li>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="about.html">About</a></li>
+											<li><a href="products.html">Products</a></li>
+											<li><a href="companyemail.html">Contact</a></li>
+											<li><a href="gov.html">Gov + Defense</a></li>
 										</ul>
 									</section>
 
@@ -186,8 +181,8 @@
 													<dl class="contact">
 														<dt>Address</dt>
 														<dd>
-															1234 Fictional Rd<br />
-															Nashville, TN 00000-0000<br />
+															1309 west 54th street<br />
+															Erie, PA 16509<br />
 															USA
 														</dd>
 														<dt>Phone</dt>
